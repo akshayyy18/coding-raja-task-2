@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    /* Dark background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player {
+    background-color: #222831;
+    /* Darker shade for the player background */
+    color: #eeeeee;
+    /* Light text for better readability */
+    width: 360px;
+    /* Adjusted width for a more compact look */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav .circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #00adb5;
+    /* Vibrant color for buttons */
+    color: #222831;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.song-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #393e46;
+    /* Lighter border for the image */
+    margin: 20px 0;
+    object-fit: cover;
+    /* Ensure images are nicely fit */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.music-player h1,
+.music-player p {
+    margin: 10px 0;
+}
+
+#progress {
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #393e46;
+    /* Progress bar background */
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    appearance: none;
+    background: #00adb5;
+    /* Vibrant color for the slider */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 50px;
+    height: 50px;
+    background: #00adb5;
+    /* Match nav button colors */
+    color: #222831;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.controls div:hover {
+    background: #05c3dd;
+    /* Slightly lighter on hover for feedback */
+}
+
+.controls div:nth-child(2) {
+    scale: 1.2;
+    /* Slightly larger play button */
+    background: #00adb5;
+    /* Keeping the play button consistent */
+    color: #ffffff;
+}
